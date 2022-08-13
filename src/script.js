@@ -1,16 +1,18 @@
+const aside = document.getElementsByTagName("aside")[0]
+const nav = document.getElementsByTagName("nav")[0]
+
 function toggleSlider() {
-    const slider = document.getElementsByTagName("aside")[0]
-    slider.classList.toggle("show")
+    aside.classList.toggle("show")
 }
 
 function toggleSubCategory(e) {
-    const element = e.composedPath().find(element => {
-        if (element.classList.contains("has__sub-category")) {
+    const category = e.composedPath().find(element => {
+        if (element.classList.contains("has__list")) {
             return true;
         }
         return false;
     })
-    element.classList.toggle("show")
+    category.classList.toggle("show")
 }
 
 function activateSlider() {
@@ -22,8 +24,8 @@ function activateSlider() {
 }
 
 function activateSubCategory() {
-    const dropDowns = [...document.getElementsByClassName("toggle__sub-category")]
-    dropDowns.forEach(element => {
+    const btns = [...aside.getElementsByClassName("btn__sub-category")]
+    btns.forEach(element => {
         element.addEventListener("click", toggleSubCategory)
     })
 }
@@ -37,8 +39,8 @@ function deactivateSlider() {
 }
 
 function deactivateSubCategory() {
-    const dropDowns = [...document.getElementsByClassName("toggle__sub-category")]
-    dropDowns.forEach(element => {
+    const btns = [...aside.getElementsByClassName("btn__sub-category")]
+    btns.forEach(element => {
         element.removeEventListener("click", toggleSubCategory)
     })
 }
@@ -52,11 +54,10 @@ function disableMobile() {
     deactivateSlider()
     deactivateSubCategory()
 
-    const slider = document.getElementsByTagName("aside")[0]
-    slider.classList.remove("show")
+    aside.classList.remove("show")
 
-    const list = [...document.getElementsByClassName("has__sub-category")]
-    list.forEach(element => {
+    const category = [...aside.getElementsByClassName("has__list")]
+    category.forEach(element => {
         element.classList.remove("show")
     })
 }

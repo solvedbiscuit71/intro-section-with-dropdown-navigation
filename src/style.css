@@ -443,12 +443,11 @@ footer .icon__maker {
         width: 480px;
 
         float: right;
-        margin-top: 4.42em;
         margin-right: 9.028vw;
     }
 
     main {
-        margin-top: 10.92em;
+        margin-top: 4.42em;
         margin-left: 11.45vw;
     }
 
@@ -456,6 +455,7 @@ footer .icon__maker {
         margin: 0;
         margin-bottom: 0.8em;
         padding: 0;
+        padding-top: 1.33em;
         padding-right: calc(100vw - 8.75em);
 
         font-weight: 700;

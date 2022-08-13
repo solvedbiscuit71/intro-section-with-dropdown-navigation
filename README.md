@@ -1,7 +1,7 @@
 # Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [frontmentor.io](https://www.frontendmentor.io/solutions/home-page-with-dropdown-navigation-css-js-0xXXUeYv5z)
+- Live Site URL: [solvedbiscuit71.github.io](https://solvedbiscuit71.github.io/intro-section-with-dropdown-navigation/)
 
 # Style Guide
 

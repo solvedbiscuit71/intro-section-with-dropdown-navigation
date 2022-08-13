@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+html:root {
+    font-family: 'Epilogue', sans-serif;
+
+    --clr-white: hsl(0, 0%, 98%);
+    --clr-gray: hsl(0, 0%, 41%);
+    --clr-black: hsl(0, 0%, 8%);
+}
+
+body {
+    margin: 0;
+
+    background-color: var(--clr-white);
+}
+
+header {
+    padding: 1.5em 1em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: none;
+}
+
+header .icon__menu {
+    max-height: 1.125em;
+}
+
+aside {
+    display: none;
+}
+
+main .img__hero img {
+    width: 100%;
+    min-height: 17.625em;
+    margin-bottom: 3.125em;
+}
+
+main h1 {
+    margin: 0;
+    margin-bottom: 0.5em;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: calc(1em + 1px);
+    letter-spacing: -0.0125em;
+    text-align: center;
+
+    color: var(--clr-black);
+}
+
+main p {
+    margin: 0;
+    margin-bottom: 1.5em;
+    padding: 0 1em;
+
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.625em;
+    text-align: center;
+    letter-spacing: 0.0025em;
+
+    color: var(--clr-gray);
+}
+
+main button {
+    margin: 0 auto 3em;
+    padding: 0;
+    display: block;
+    width: 8.5em;
+    min-height: 3em;
+
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.625em;
+    text-align: center;
+    letter-spacing: 0.0025em;
+
+    background-color: var(--clr-black);
+    border: none;
+    border-radius: 0.875em;
+    color: var(--clr-white);
+}
+
+footer {
+    margin: 3em 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+footer .list__link {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+footer .list__link li {
+    display: inline-block;
+    margin-right: 1.75em;
+}
+
+footer .list__link li:last-of-type {
+    margin-right: 0;
+}
+
+footer .icon__databiz {
+    width: 82px;
+    min-height: 14px;
+}
+
+footer .icon__audiophile {
+    width: 53px;
+    min-height: 25px;
+}
+
+footer .icon__meet {
+    width: 65px;
+    min-height: 15px;
+}
+
+footer .icon__maker {
+    width: 59px;
+    min-height: 18px;
+}

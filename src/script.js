@@ -71,7 +71,7 @@ function checkMobile(isMobile) {
 }
 
 /* main() function */
-const isMobile = window.matchMedia("(max-width: 720px)")
+const isMobile = window.matchMedia("(max-width: 1020px)")
 isMobile.addEventListener("change",checkMobile);
 
 checkMobile(isMobile);

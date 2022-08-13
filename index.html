@@ -23,7 +23,56 @@
     <img class="icon__snap" src="./images/logo.svg" alt="snap company's logo">
 
     <nav>
-      <!-- This is navbar shown in desktop view -->
+      <ul class="list__category">
+        <li class="has__list">
+          <button class="btn__sub-category">
+            <span>Features</span>
+            <img class="icon__arrow" src="./images/icon-arrow-down.svg"
+              alt="arrow icon to indicate the status of sub-category">
+          </button>
+    
+          <ul class="list__sub-category">
+            <li class="has__icon">
+              <img src="./images/icon-todo.svg" alt="a icon representing a list of todos">
+              <span>Todo List</span>
+            </li>
+            <li class="has__icon">
+              <img src="./images/icon-calendar.svg" alt="a icon representing calendar">
+              <span>Calendar</span>
+            </li>
+            <li class="has__icon">
+              <img src="./images/icon-reminders.svg" alt="a bell icon representing remainder">
+              <span>Remainders</span>
+            </li>
+            <li class="has__icon">
+              <img src="./images/icon-planning.svg" alt="a clock icon representing planning">
+              <span>Planning</span>
+            </li>
+          </ul>
+        </li>
+    
+        <li class="has__list">
+          <button class="btn__sub-category">
+            <span>Company</span>
+            <img class="icon__arrow" src="./images/icon-arrow-down.svg"
+              alt="arrow icon to indicate the status of sub-category">
+          </button>
+    
+          <ul class="list__sub-category">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+    
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+    
+      <div class="elm__sign-up">
+        <button>Login</button>
+        <button>Register</button>
+      </div>
     </nav>
 
     <img class="icon__menu" src="./images/icon-menu.svg" alt="menu icon to open the sliding menu">
@@ -84,11 +133,12 @@
     </div>
   </aside>
 
-  <main>
-    <picture class="img__hero">
-      <img src="./images/image-hero-mobile.png" alt="an illustration of a man working with his laptop">
-    </picture>
+  <picture class="img__hero">
+    <source media="(min-width: 1020px)" srcset="./images/image-hero-desktop.png">
+    <img src="./images/image-hero-mobile.png" alt="an illustration of a man working with his laptop">
+  </picture>
 
+  <main>
     <h1> Make remote work </h1>
     <p>
       Get your team in sync, no matter your location. Streamline processes,

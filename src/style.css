@@ -165,7 +165,7 @@ aside .elm__sign-up button:last-of-type {
     border: 1.5px solid var(--clr-gray);
 }
 
-main .img__hero img {
+picture.img__hero img {
     width: 100%;
     min-height: 17.625em;
     margin-bottom: 3.125em;
@@ -259,4 +259,189 @@ footer .icon__meet {
 footer .icon__maker {
     width: 59px;
     min-height: 18px;
+}
+
+
+@media (min-width: 1020px) {
+    header {
+        padding: 1.359375em 2.5em;
+
+        justify-content: left;
+        align-items: center;
+        gap: 3.75em;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        flex-grow: 1;
+    }
+
+    nav .list__category  {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        gap: 2.5em;
+        align-items: center;
+
+        list-style-type: none;
+    }
+
+    nav .list__category > li {
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 100%;
+        letter-spacing: 0.01em;
+
+        color: var(--clr-gray);
+    }
+
+    nav .list__category > li:last-of-type {
+        margin-right: 0;
+    }
+
+    nav .list__category .has__list button {
+        margin: 0;
+        padding: 0;
+        
+        font-size: 0.875rem;
+
+        background-color: var(--clr-white);
+        border: none;
+        border-radius: 0;
+        color: var(--clr-gray);
+    }
+
+    nav .list__category .has__list button > span {
+        margin-right: .25em;
+    }
+
+    nav .list__category .icon__arrow {
+        position: relative;
+        bottom: .125em;
+    }
+
+    nav .list__sub-category {
+        display: none;
+    }
+
+    nav .elm__sign-up {
+        display: flex;
+        align-items: center;
+
+        gap: .5em;
+    }
+
+    nav .elm__sign-up button {
+        height: 3em;
+        width: 7.4285em;
+
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+
+        background-color: var(--clr-white);
+        border: none;
+        border-radius: 1em;
+        color: var(--clr-gray);
+    }
+
+    nav .elm__sign-up button:last-of-type {
+        border: 1.5px solid var(--clr-gray);
+    }
+
+    header .icon__menu {
+        display: none;
+    }
+
+    picture.img__hero img {
+        height: 640px;
+        width: 480px;
+
+        float: right;
+        margin-top: 2.42em;
+        margin-right: 9.028vw;
+    }
+
+    main {
+        margin-top: 8.92em;
+        margin-left: 11.45vw;
+    }
+
+    main h1 {
+        margin: 0;
+        margin-bottom: 0.8em;
+        padding: 0;
+        padding-right: calc(100vw - 8.75em);
+
+        font-weight: 700;
+        font-size: 4.875rem;
+        line-height: 103.85%;
+        letter-spacing: 0.0015em;
+        text-align: left;
+    }
+
+    main p {
+        margin: 0;
+        margin-bottom: 2.6666666667em;
+        padding: 0;
+        padding-right: calc(100vw - 35em);
+
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 158%;
+        letter-spacing: 0.0035em;
+        text-align: left;
+    }
+    
+    main button {
+        margin: 0;
+        width: 9.055em;
+        height: 3.11em;
+
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 158%;
+        letter-spacing: 0.005em;
+
+        border-radius: 0.7777777778em;
+    }
+
+    footer {
+        margin: 5em 0 0;
+        margin-left: 11.45vw;
+
+        justify-content: flex-start;
+    }
+
+    footer .list__sponsor li {
+        margin-right: 2.5em;
+    }
+
+    footer .list__sponsor li:last-of-type {
+        margin-right: 0;
+    }
+
+    footer .icon__databiz {
+        width: unset;
+        min-height: unset;
+    }
+
+    footer .icon__audiophile {
+        width: unset;
+        min-height: unset;
+    }
+
+    footer .icon__meet {
+        width: unset;
+        min-height: unset;
+    }
+
+    footer .icon__maker {
+        width: unset;
+        min-height: unset;
+    }
 }
